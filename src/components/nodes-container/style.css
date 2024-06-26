@@ -1,0 +1,29 @@
+.notes-app .notes-container {
+    padding: 1.5em;
+    flex-wrap: wrap;
+}
+
+.notes-app .notes-container h2 {
+    font-size: 1.5em;
+    color: #111;
+}
+
+.notes-app .notes-container .notes-list {
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+@media (max-width: 580px){
+    .notes-app .notes-container .notes-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 580px) and 
+ (max-width: 880px){
+    .notes-app .notes-container .notes-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
